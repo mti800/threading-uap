@@ -26,7 +26,9 @@
             Thread task2 = new Thread(HolaUAP);
             task2.Name = "Hilo 2";
 
-            Thread task3 = new Thread(() => Console.WriteLine("InlineAction"));
+            Thread task3 = new Thread(
+                () => Console.WriteLine("InlineAction")
+            );
 
             //Excecute all tasks
             task1.Start();
